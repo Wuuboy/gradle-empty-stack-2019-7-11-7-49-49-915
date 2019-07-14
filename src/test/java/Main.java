@@ -18,6 +18,14 @@ public class Main {
         String rightiPhoneMobileInfo = iPhone.outputBasicMobileInfo();
         System.out.println(rightiPhoneMobileInfo);
 
+        Person person = new Person(android);
+        System.out.println(person.call());
+
+        IPhone iPhone1 = new IPhone("iPhone","yellow","iPhone7","I am good!");
+//        IPhoneRobot iPhoneRobot = new IPhoneRobot(iPhone);  could not add (Moble)iPhone to it
+        IPhoneRobot iPhoneRobot = new IPhoneRobot(iPhone1);
+
+
 
     }
 }
