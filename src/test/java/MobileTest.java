@@ -5,18 +5,17 @@ public class MobileTest {
 
     @Test
     public void should_return_mobile_message(){
-        //given
-        Mobile mobile = new Mobile();
-        //when
+        Mobile mobile = new Mobile("huawei","blue","huaweiMate20");
         String rightMessage = mobile.outputMessage();
-        //then
-        assertSame("Message : [your input message]",rightMessage);
+        System.out.println(rightMessage);
+        String rigthMobileInfo = mobile.outputBasicMobileInfo();
+        System.out.println(rigthMobileInfo);
     }
 
     @Test
     public void should_return_android_mobile_message(){
         //given
-        Mobile android = new Android();
+        Mobile android = new Android("vivo","red","vivo7");
         //when
         String rightMessage = android.outputMessage();
         //then
@@ -26,7 +25,7 @@ public class MobileTest {
     @Test
     public void should_return_iphone_mobile_message(){
         //given
-        Mobile iPhone = new IPhone();
+        Mobile iPhone = new IPhone("iPhone","white","iPhone8");
         //when
         String rightMessage = iPhone.outputMessage();
         //then
