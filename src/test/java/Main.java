@@ -6,13 +6,13 @@ public class Main {
         String rightMobileInfo = mobile.outputBasicMobileInfo();
         System.out.println(rightMobileInfo);
 
-        Mobile android = new Android("vivo","red","vivo7");
+        Mobile android = new Android("vivo","red","vivo7","我是个漂亮的手机，买下我！");
         String rightandroidMessage = android.outputMessage();
         System.out.println(rightandroidMessage);
         String rightAndroidMobileInfo = android.outputBasicMobileInfo();
         System.out.println(rightAndroidMobileInfo);
 
-        Mobile iPhone = new IPhone("iPhone","white","iPhone8");
+        Mobile iPhone = new IPhone("iPhone","white","iPhone8","我是个漂亮的手机，买下我！");
         String rightiPhoneMessage = iPhone.outputMessage();
         System.out.println(rightiPhoneMessage);
         String rightiPhoneMobileInfo = iPhone.outputBasicMobileInfo();
